@@ -1,0 +1,428 @@
+.payment-view {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    max-width: 90%;
+    text-align: end;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .cloudnutspay-id {
+    font-size: 10px;
+  }
+  
+  .payment-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .logo-and-name {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+  .building-name {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+  .user-info > div {
+    margin-bottom: 5px;
+  }
+  
+  .logout-button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .logout-button:hover {
+    background-color: rgb(48, 101, 201);
+  }
+
+  .edit-button {
+    background-color: rgb(48, 101, 201);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .edit-button:hover {
+    background-color: #c13525;
+  }
+  
+  .payment-nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    padding: 10px;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  
+  
+  
+  
+  
+  .payment-content {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .payment-details {
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .balance-and-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  
+  .address-info, 
+  .balance-info {
+    margin-right: 10px;
+  }
+  
+  .custom-amount-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .custom-amount-input:focus {
+    outline: none;
+    border-color: #4a90e2;
+  }
+  
+  .amount-warning {
+    color: #d32f2f;
+    margin-bottom: 10px;
+  }
+  
+  .pay-button-short {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: auto; 
+  }
+  
+  .pay-button-short:hover {
+    background-color: #388e3c;
+  }
+  
+
+  .payment-description {
+    text-align: justify;
+  }
+
+  .info-row {
+    text-align: justify;
+  }
+
+  .info-row1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* This spreads out the items in the row */
+    margin-bottom: 10px; /* Space between rows */
+  }
+  
+  .info-label {
+    margin-right: 10px; /* Space between label and the input description */
+    font-weight: bold;
+  }
+  
+  .input-description {
+    display: flex;
+    align-items: center;
+  }
+  
+  .amount-input {
+    margin-left: 10px; 
+  }
+/* ------- */
+.payment-modal {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 800px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .payment-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .payment-form h2 {
+    color: #333;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  .payment-form .input-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+  }
+  
+  .payment-form .form-group {
+    flex: 1;
+    margin-right: 1rem;
+    min-width: 120px; /* Ensure that the form group doesn't get too small */
+  }
+  
+  .payment-form .form-group:last-child {
+    margin-right: 0;
+  }
+  
+  .payment-form .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .payment-form .form-group input[type="text"] {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 4px;
+  }
+  
+  .payment-form .form-actions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 2rem;
+  }
+  
+  .payment-form .form-actions button {
+    padding: 0.5rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    margin-left: 1rem;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s;
+  }
+  
+  .payment-form .submit-button {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .payment-form .submit-button:hover {
+    background-color: #43A047;
+  }
+  
+  .payment-form .cancel-button {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  .payment-form .cancel-button:hover {
+    background-color: #D32F2F;
+  }
+
+
+  .profile-information {
+    max-width: 500px; /* Or your desired width */
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    background-color: #fff;
+  }
+  
+  .profile-information h3 {
+    color: #333;
+    margin-bottom: 16px;
+    text-align: left;
+  }
+  
+  .profile-row {
+    background-color: #f7f7f7; /* Light grey background for each row */
+    padding: 10px;
+    margin-bottom: 8px; /* Space between rows */
+    border-radius: 4px; /* Optional rounded corners */
+  }
+  
+  .profile-row p {
+    margin: 0; /* Remove default paragraph margin */
+    color: #333;
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: left; /* Align text to the left */
+  }
+  
+  .profile-information strong {
+    font-weight: 600; /* Make the label bold */
+  }
+  
+
+  
+
+  .units-section {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+  }
+  
+  .units-section p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+  }
+  
+  .units-section h2 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .unit-info {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .unit-info span {
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .unit-info button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .unit-info button:hover {
+    background-color: #c82333;
+  }
+  
+  .units-section button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .units-section button:hover {
+    background-color: #0069d9;
+  }
+  
+  .add-unit-modal {
+    background: #dfdede;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 400px;
+  }
+  
+  .add-unit-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  
+  .modal-content {
+    text-align: center;
+  }
+  
+  .add-unit-modal h2 {
+    margin-bottom: 15px;
+  }
+  
+  .add-unit-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .modal-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .modal-submit-button {
+    background-color: #007bff;
+    max-width: 20%;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .modal-submit-button:hover {
+    background-color: #0056b3;
+  }
+  
